@@ -15,9 +15,14 @@
 		B319D4231F0AAE13005881BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B319D4211F0AAE13005881BC /* Main.storyboard */; };
 		B319D4251F0AAE13005881BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B319D4241F0AAE13005881BC /* Assets.xcassets */; };
 		B319D4281F0AAE13005881BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B319D4261F0AAE13005881BC /* LaunchScreen.storyboard */; };
+		B319D4301F0AFED6005881BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B319D42F1F0AFED6005881BC /* GoogleService-Info.plist */; };
+		D2D37085AF4D731487CF62E1 /* Pods_FirebaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF048CF073E0B81B06D6621 /* Pods_FirebaseTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DF048CF073E0B81B06D6621 /* Pods_FirebaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EA6AA84D251D0F6F9D1E09 /* Pods-FirebaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.release.xcconfig"; sourceTree = "<group>"; };
+		6A0F61FAD6F1F65D1B3D994B /* Pods-FirebaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B319D4141F0AAE13005881BC /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B319D4171F0AAE13005881BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B319D4191F0AAE13005881BC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		B319D4241F0AAE13005881BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B319D4271F0AAE13005881BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B319D4291F0AAE13005881BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B319D42F1F0AFED6005881BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D37085AF4D731487CF62E1 /* Pods_FirebaseTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3BA485723F16C00FB3C924B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF048CF073E0B81B06D6621 /* Pods_FirebaseTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B319D40B1F0AAE13005881BC = {
 			isa = PBXGroup;
 			children = (
 				B319D4161F0AAE13005881BC /* FirebaseTest */,
 				B319D4151F0AAE13005881BC /* Products */,
+				FDBE655FD5A3F902D049FA93 /* Pods */,
+				A3BA485723F16C00FB3C924B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +85,19 @@
 				B319D4211F0AAE13005881BC /* Main.storyboard */,
 				B319D4241F0AAE13005881BC /* Assets.xcassets */,
 				B319D4261F0AAE13005881BC /* LaunchScreen.storyboard */,
+				B319D42F1F0AFED6005881BC /* GoogleService-Info.plist */,
 				B319D4291F0AAE13005881BC /* Info.plist */,
 			);
 			path = FirebaseTest;
+			sourceTree = "<group>";
+		};
+		FDBE655FD5A3F902D049FA93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0F61FAD6F1F65D1B3D994B /* Pods-FirebaseTest.debug.xcconfig */,
+				65EA6AA84D251D0F6F9D1E09 /* Pods-FirebaseTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B319D42C1F0AAE13005881BC /* Build configuration list for PBXNativeTarget "FirebaseTest" */;
 			buildPhases = (
+				48745A9D42342CD19018D114 /* [CP] Check Pods Manifest.lock */,
 				B319D4101F0AAE13005881BC /* Sources */,
 				B319D4111F0AAE13005881BC /* Frameworks */,
 				B319D4121F0AAE13005881BC /* Resources */,
+				8B5D5A213F3DDC6344C0B94F /* [CP] Embed Pods Frameworks */,
+				8F875B85A0A2DB7670EAB06E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B319D4231F0AAE13005881BC /* Main.storyboard in Resources */,
+				B319D4301F0AFED6005881BC /* GoogleService-Info.plist in Resources */,
 				B319D41A1F0AAE13005881BC /* GameScene.sks in Resources */,
 				B319D4251F0AAE13005881BC /* Assets.xcassets in Resources */,
 				B319D4281F0AAE13005881BC /* LaunchScreen.storyboard in Resources */,
@@ -142,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48745A9D42342CD19018D114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5D5A213F3DDC6344C0B94F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F875B85A0A2DB7670EAB06E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B319D4101F0AAE13005881BC /* Sources */ = {
@@ -273,6 +352,7 @@
 		};
 		B319D42D1F0AAE13005881BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0F61FAD6F1F65D1B3D994B /* Pods-FirebaseTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E9XW5U7WR;
@@ -286,6 +366,7 @@
 		};
 		B319D42E1F0AAE13005881BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EA6AA84D251D0F6F9D1E09 /* Pods-FirebaseTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E9XW5U7WR;
@@ -316,6 +397,7 @@
 				B319D42E1F0AAE13005881BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
